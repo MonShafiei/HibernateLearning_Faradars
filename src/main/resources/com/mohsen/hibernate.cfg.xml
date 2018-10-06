@@ -28,9 +28,9 @@
         <property name="hbm2ddl.auto">update</property>
 
 
-        <mapping class="com.mohsen.entitiy.Person"/>
+        <!--  <mapping class="com.mohsen.entitiy.Person"/> -->
         <!-- Mapping files -->
-
+        <mapping resource="com/mohsen/model/hbm/Person.hbm.xml"/>
 
     </session-factory>
 

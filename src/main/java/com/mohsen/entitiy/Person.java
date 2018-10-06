@@ -8,9 +8,9 @@ import javax.persistence.Id;
 /**
  * Created by Mohsen on 18/10/06.
  */
-@Entity
+//@Entity
 public class Person {
-    @Id
+    //@Id
     private Integer id;
     private String name;
     private String family;
@@ -41,6 +41,10 @@ public class Person {
 
     public Person(Integer id, String name, String family) {
         this.id = id;
+        this.name = name;
+        this.family = family;
+    }
+    public Person(String name, String family) {
         this.name = name;
         this.family = family;
     }

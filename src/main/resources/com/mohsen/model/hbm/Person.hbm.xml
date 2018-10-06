@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping >
+
+    <class name="com.mohsen.entitiy.Person" table="persons">
+        <id name="id" column="Person_ID">
+            <generator class="increment" />
+        </id>
+        <property name="name" column="NAME" />
+        <property name="family" type="java.lang.String" column="family" unique="false"
+                  not-null="false" />
+
+    </class>
+</hibernate-mapping>

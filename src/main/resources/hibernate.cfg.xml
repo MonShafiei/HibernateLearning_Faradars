@@ -18,7 +18,7 @@
         <property name="connection.pool_size">1</property>
 
         <!-- SQL dialect -->
-        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
 
 
         <!-- Echo all executed SQL to stdout -->
@@ -30,7 +30,8 @@
 
         <!--  <mapping class="com.mohsen.entitiy.Person"/> -->
         <!-- Mapping files -->
-        <mapping resource="com/mohsen/model/hbm/Person.hbm.xml"/>
+        <!-- <mapping resource="com/mohsen/model/hbm/Person.hbm.xml"/> -->
+        <mapping class="com.simple_annotation.Member"/>
 
     </session-factory>
 
